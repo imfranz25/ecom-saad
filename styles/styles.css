@@ -1,0 +1,197 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body{
+	background-image: url(../images/bg.jpg);
+}
+
+label{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+/*--Main Wrapper--*/
+.main_wrapper{
+	margin: 0% 5% 0% 5%;
+	color: white;
+	background-color: rgb(0,0,0,.7);
+}
+/*--Ends of Main wrapper--*/
+
+
+/*--Wrapper--*/
+.wrapper{
+	width: auto;
+	height: 700px;
+}
+/*--Ends of Wrapper--*/
+
+/*--Header--*/
+#header{
+	height: 200px;
+	width: auto;
+	display: flex;
+	align-items: center;
+	border: cyan dotted 1px;
+	padding: 30px;
+}
+#header img{
+	border-radius: 5px;
+	border: cyan dotted 1px;
+	margin-right: 3%;
+	box-shadow: 0px 0px 20px gold;
+	cursor: pointer;
+}
+#header img:hover{
+	box-shadow: 0px 0px 20px cyan;
+}
+/*--Ends of Header--*/
+
+/*--MenuBar--*/
+#menubar{
+	width: auto;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	border: cyan dotted 1px;
+	background-color: rgb(0,0,0,.7);
+	box-shadow: 5px 3px cyan;
+	border-radius: 5px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+#menu{
+	padding: 0px;
+	margin-left: 2%;
+	line-height: 35px;
+	width: 740px;
+}
+
+#menu li{
+	list-style: none;
+	display: inline;
+	border-radius: 3px;
+	border: cyan solid 1px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	box-shadow: 5px 2px cyan;
+	background-color: rgb(250,0,100,.1);
+}
+
+#menu li:hover{
+	transition: .5s;
+	border-radius: 4px;
+	box-shadow: 0px 0px 300px cyan;
+	margin-left: .7%;
+	zoom:105%;
+}
+#menu a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 8px;
+	margin: 5px;
+	font-size: 18px;
+	font-family: comic sans ms;
+	cursor: pointer;
+	font-style: italic;
+	text-transform: 3px 3px black;
+}
+
+#menu a:hover{
+	font-size: 17px;
+	font-weight: bolder;
+	color: cyan;
+	text-shadow: 2px 2px maroon;
+}
+
+#form{
+	width: 300px;
+	height: 30px;
+	margin-left: 1%;
+}
+#form input{
+	border-radius: 5px;
+	width: 280px;
+	border: cyan solid 1px;
+	background-color: rgb(50,125,110,.1);
+	color: white;
+	padding: 8px;
+	box-shadow: 3px 2px cyan;
+}
+
+#form img{
+	width: 33px;
+	height: 31px;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 3px 2px cyan;
+	position: absolute;
+	margin-left: -3%;
+}
+/*--Ends of MenuBar--*/
+
+/*--Sidebar--*/
+#sidebar{
+	height: 700px;
+	float: right;
+	width: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: cyan dotted 1px;
+}
+/*--Ends of SideBar--*/
+
+/*--Content--*/
+#content{
+	width: auto;
+	height: 700px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: cyan dotted 1px;
+}
+/*--Ends of Content--*/
+
+/*--Footer--*/
+#footer{
+	width: auto;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1%;
+	margin-top: 2%;
+	border: cyan dotted 1px;
+}
+/*--Ends of Footer--*/
