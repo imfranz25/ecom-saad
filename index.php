@@ -1,8 +1,14 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>My Online Shop</title>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<!--CSS Source-->
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<!--Import Side Bar-->
+	<?php include 'functions/side_bar.php' ?>
+
 </head>
 <body>
 
@@ -40,7 +46,15 @@
 
 			<!--SideBar Starts Here-->
 			<div id="sidebar">
-				<label>Side Bar</label>
+				<div id = "brand" >
+					<label >Brands</label><br><br>
+					<?php show('brand','brand_title'); ?>
+				</div>
+				<div id = "cat">
+					<label>Categories</label><br><br>
+					<?php show('category','cat_title'); ?>
+				</div>
+				
 			</div>
 			<!--SideBar Ends Here-->
 
