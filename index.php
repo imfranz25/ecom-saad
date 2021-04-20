@@ -7,7 +7,7 @@
 	<!--CSS Source-->
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<!--Import Side Bar-->
-	<?php include 'functions/side_bar.php' ?>
+	<?php include 'functions/side_bar.php'; ?>
 
 </head>
 <body>
@@ -46,15 +46,14 @@
 
 			<!--SideBar Starts Here-->
 			<div id="sidebar">
-				<div id = "brand" >
-					<label >Brands</label><br><br>
-					<?php show('brand','brand_title'); ?>
+				<div id = 'brand'>
+					<label>Brand</label><br><br>
+					<?php show('brand','brand_title'); ?><br><br>
 				</div>
-				<div id = "cat">
-					<label>Categories</label><br><br>
-					<?php show('category','cat_title'); ?>
+				<div id = 'category'>
+				<label>Category</label><br><br>
+				<?php show('category','cat_title'); ?><br><br>
 				</div>
-				
 			</div>
 			<!--SideBar Ends Here-->
 
