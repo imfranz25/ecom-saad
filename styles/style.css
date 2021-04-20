@@ -28,7 +28,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
 body{
 	background-image: url(../images/bg.jpg);
 }
@@ -36,8 +35,13 @@ body{
 label{
 	font-size: 24px;
 	font-weight: bold;
+	border: solid 1px cyan;
+	box-shadow: 3px 2px cyan;
+	padding: 5px;
 }
-
+a{
+	font-size: 20px;
+}
 
 /*--Main Wrapper--*/
 .main_wrapper{
@@ -61,12 +65,12 @@ label{
 	width: auto;
 	display: flex;
 	align-items: center;
-	border: cyan dotted 1px;
+	border: cyan solid 1px;
 	padding: 30px;
 }
 #header img{
 	border-radius: 5px;
-	border: cyan dotted 1px;
+	border: cyan solid 1px;
 	margin-right: 3%;
 	box-shadow: 0px 0px 20px gold;
 	cursor: pointer;
@@ -82,7 +86,7 @@ label{
 	height: 80px;
 	display: flex;
 	align-items: center;
-	border: cyan dotted 1px;
+	border: cyan solid 1px;
 	background-color: rgb(0,0,0,.7);
 	box-shadow: 5px 3px cyan;
 	border-radius: 5px;
@@ -162,24 +166,29 @@ label{
 
 /*--Sidebar--*/
 #sidebar{
-	height: 700px;
 	float: right;
 	width: 250px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: cyan dotted 1px;
+	height: 660px;
+	border: cyan solid 1px;
+	padding: 30px;
 }
+#sidebar a{
+	margin-left: 20%;
+}
+#brand,#cat{
+	margin-top: 10%;
+}
+
 /*--Ends of SideBar--*/
 
 /*--Content--*/
 #content{
 	width: auto;
-	height: 700px;
+	height: 720px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: cyan dotted 1px;
+	border: solid 1px cyan;
 }
 /*--Ends of Content--*/
 
@@ -192,6 +201,6 @@ label{
 	justify-content: center;
 	margin-bottom: 1%;
 	margin-top: 2%;
-	border: cyan dotted 1px;
+	border: cyan solid 1px;
 }
 /*--Ends of Footer--*/
