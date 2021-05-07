@@ -5,7 +5,7 @@
 
 	<title>My Online Shop</title>
 	<!--CSS Source-->
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/ecom.css">
 	<!--Import Side Bar-->
 	<?php include 'functions/function.php'; ?>
 
@@ -18,16 +18,17 @@
 		<div class="wrapper">
 			<!--Header Starts Here-->
 			<div id="header">
-				<img src="images/syra_logo.png">
-				<label>Syra Mart</label>
+				<p>
+				<img src="images/syra_logo.png" />
+				<h1>Syra Cap Mart</h1> Style your Confidence with Syra Cap</p>
 			</div>
 			<!--Header Ends Here-->
 
 			<!--MenuBar Starts Here-->
 			<div id="menubar">
 				<ul id="menu">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">All Products</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="index.php">All Products</a></li>
 					<li><a href="#">My Account</a></li>	
 					<li><a href="#">Shopping Cart</a></li>
 					<li><a href="#">Contact Us</a></li>
@@ -48,12 +49,16 @@
 				<!--SideBar Starts Here-->
 				<div id="sidebar">
 					<div id = 'brand'>
-						<label>Brand</label><br><br>
-						<?php show_title('brand','brand_title'); ?><br><br>
+						<h1>Brands</h1><br><br>
+						<u>
+							<?php show_title('brand'); ?>
+						</u>
 					</div>
 					<div id = 'category'>
-					<label>Category</label><br><br>
-					<?php show_title('category','category_title'); ?><br><br>
+						<h1>Category</h1><br><br>
+					<u>
+						<?php show_title('category'); ?>
+					</u>
 					</div>
 				</div>
 				<!--SideBar Ends Here-->
@@ -61,7 +66,13 @@
 				<!--Content Starts Here-->
 				<div id="content">
 					<div id="product_box">
-						<?php get_product(); ?>
+						<!--Php Codes-->
+						<?php 
+							get_product(); 
+							get_sort_product('category'); 
+							get_sort_product('brand'); 
+						?>
+						<!--End of Php Codes-->
 					</div>
 				</div>
 				<!--Content Ends Here-->
