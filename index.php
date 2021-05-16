@@ -5,7 +5,7 @@
 
 	<title>My Online Shop</title>
 	<!--CSS Source-->
-	<link rel="stylesheet" type="text/css" href="styles/ecom.css">
+	<link rel="stylesheet" href="styles/ecom.css?v=<?php echo time(); ?>">
 	<!--Import Side Bar-->
 	<?php include 'functions/function.php'; ?>
 
@@ -69,8 +69,8 @@
 						<!--Php Codes-->
 						<?php 
 							get_product(); 
-							get_sort_product('category'); 
-							get_sort_product('brand'); 
+							get_sort_product('category');
+							get_sort_product('brand');
 						?>
 						<!--End of Php Codes-->
 					</div>
@@ -88,6 +88,35 @@
 		</div>
 	</div>
 	<!--Main Wrapper Ends Here-->
+
+	<!-----------Modal Message-------------->
+	<div id="modal_message" class="modal_message">
+		<div class="modal_message_content">
+		  	<div class="modal_message_header">
+		    	<h2>*Product Details*</h2>
+		  	</div>
+			<div class="modal_message_body">
+				<label id="details"></label>
+			</div>
+			<div class="modal_message_footer">
+				<center>
+			  		<button id="close" onclick="hide_details()">Close</button>
+			  	</center>
+		 	 </div>
+		</div>
+	</div>
+	<!-----------End of Modal Message-------------->
+
+	<script>
+		function product_details(title){
+			document.getElementById('modal_message').style = "display:block" ;
+			var a = document.getElementById('details');
+			a.innerHTML = title;
+		}
+		function hide_details(){
+			document.getElementById('modal_message').style = "display:none" ;
+		}
+	</script>
 
 </body>
 </html>
