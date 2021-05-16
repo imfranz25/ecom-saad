@@ -4,7 +4,7 @@
 
 	<title>Inserting Product</title>
 	<!--CSS Source-->
-	<link rel="stylesheet" type="text/css" href="../styles/style.css">
+	<link rel="stylesheet" type="text/css" href="../styles/ecom.css">
 	<?php  include '../includes/mysql_connection.php'; ?>
 	<script src="../js/tinymce.min.js"></script>
 	<script>tinymce.init({selector:'textarea';});</script>

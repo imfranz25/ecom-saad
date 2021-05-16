@@ -300,3 +300,72 @@ h1{
 	padding-bottom: 30px;
 }
 /*--Ends of Footer--*/
+
+
+
+/*-----------------Modal Product Details-------------------*/
+   .modal_message {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 0%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+  /* Modal Header */
+  .modal_message_header {
+    padding: 2px 16px;
+    background-color: rgb(0,120,120,.6);
+    color: skyblue;
+    border:cyan 1px solid;
+  }
+  .modal_message_header h2{
+    color: cyan;
+    font-weight: bolder;
+    text-decoration:underline solid cyan 2px;
+    text-shadow: 4px 3px maroon;
+    text-align: center;
+    cursor: pointer;
+    font-size: 28px;
+    margin: 5%;
+  }
+  /* Modal Body */
+  .modal_message_body{
+    padding: 8%;
+    background-color: rgb(0,50,50,.8);
+    border: cyan 1px solid;
+    color: white;
+  }
+  /* Modal Footer */
+  .modal_message_footer{
+    background-color: rgb(0,120,120,.6);
+    border:solid 1px cyan;
+    color: white;
+  }
+  #close{
+  	color: cyan;
+  	font-size: 20px;
+  	margin: 5%;
+  	background-color: rgb(0,20,20,.5);
+  }
+  /* Modal Content */
+  .modal_message_content{
+    position: relative;
+    margin: auto;
+    border: 1px solid gray;
+    box-shadow: 100px red;
+    width: 370px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9),0 6px 20px 0 rgba(0,0,0,0.9);
+    animation-name: animatetop;
+    animation-duration: 1.2s;
+    margin-top: 15%;
+    background: rgb(0,0,0.8);
+  }
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
