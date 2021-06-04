@@ -89,34 +89,35 @@
 	</div>
 	<!--Main Wrapper Ends Here-->
 
-	<!-----------Modal Message-------------->
 	<div id="modal_message" class="modal_message">
 		<div class="modal_message_content">
-		  	<div class="modal_message_header">
-		    	<h2>*Product Details*</h2>
-		  	</div>
+			<div class="modal_message_header">
+				<h2>*Product Details*</h2>
+			</div>
 			<div class="modal_message_body">
 				<label id="details"></label>
 			</div>
 			<div class="modal_message_footer">
 				<center>
-			  		<button id="close" onclick="hide_details()">Close</button>
-			  	</center>
-		 	 </div>
+					<button id="close" onclick="hide_details()">Close</button>
+				</center>
+			</div>
 		</div>
 	</div>
-	<!-----------End of Modal Message-------------->
+
 
 	<script>
-		function product_details(title){
-			document.getElementById('modal_message').style = "display:block" ;
-			var a = document.getElementById('details');
-			a.innerHTML = title;
+		function product_details(product_id,product_name,product_image,product_price,product_desc){
+			document.getElementById('modal_message').style = "display:block";
+			var content = document.getElementById('details');
+			content.innerHTML = "<img src = 'admin_area/product_images/"+product_image+" ' />Product ID : "+product_id+"<br>Name : "+product_name+"<br>Price : Php "+product_price+"<br>Description : "+product_desc;
 		}
 		function hide_details(){
-			document.getElementById('modal_message').style = "display:none" ;
+			document.getElementById('modal_message').style = "display:none";
 		}
 	</script>
+
+	
 
 </body>
 </html>

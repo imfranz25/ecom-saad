@@ -36,11 +36,10 @@
 
                     //get data
                     $product_id = $row['product_id'];
-                    $product_cat = $row['product_category'];
-                    $product_brand = $row['product_brand'];
                     $product_title = $row['product_title'];
                     $product_price = $row['product_price'];
                     $product_image = $row['product_image'];
+                    $product_desc = $row['product_desc'];
 
                     echo "<script> var a = $product_price;</script>
                             <div id = 'single_product'>
@@ -48,7 +47,8 @@
                             <h3> $product_title </h3>
                             <img src = 'admin_area/product_images/$product_image'>
                             <p><b>Price : PHP $product_price </b></p>
-                            <a onclick = 'product_details(".json_encode($product_title).");'>Details</a>
+                            <a onclick = 'product_details(".json_encode($product_id).",".json_encode($product_title).",".json_encode($product_image).",".json_encode(number_format($product_price,2)).",".json_encode($product_desc)."
+                            )' >Details</a>
                             <a href = 'index.php'><button>Add to Cart</button></a>
                             </center>
                             </div>" ;
@@ -73,18 +73,20 @@
 
                     //get data
                     $product_id = $row['product_id'];
-                    $product_cat = $row['product_category'];
-                    $product_brand = $row['product_brand'];
                     $product_title = $row['product_title'];
                     $product_price = $row['product_price'];
                     $product_image = $row['product_image'];
+                    $product_desc = $row['product_desc'];
+                   
 
-                    echo "<div id = 'single_product'>
+                    echo "<script> var a = $product_price;</script>
+                            <div id = 'single_product'>
                             <center>
                             <h3> $product_title </h3>
                             <img src = 'admin_area/product_images/$product_image'>
                             <p><b>Price : PHP $product_price </b></p>
-                            <a href = 'index.php' onclick = 'alert('hhaha')'>Details</a>
+                            <a onclick = 'product_details(".json_encode($product_id).",".json_encode($product_title).",".json_encode($product_image).",".json_encode(number_format($product_price,2)).",".json_encode($product_desc)."
+                            )' >Details</a>
                             <a href = 'index.php'><button>Add to Cart</button></a>
                             </center>
                             </div>" ;
